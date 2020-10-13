@@ -14,13 +14,17 @@ Trata-se de um sistema desenvolvido em Laravel 5.5 para fins didáticos onde o u
 
 ## Funcionalidades
 
-Tela de Home: na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema.
+Tela de Home:
+  Na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema.
 
-Tela de Cadastro: na tela de cadastro de funcionários temos um formulário e os campos são validados com o plugin jQuery Mask. Após o cadastro, o usuário é redirecionado para a home e uma flash message é exibida durante 3 segundos.
+Tela de Cadastro:
+  Na tela de cadastro de funcionários temos um formulário e os campos são validados com o plugin jQuery Mask. Após o cadastro, o usuário é redirecionado para a home e uma flash message é exibida durante 3 segundos.
 
-Botão para alterar dados de funcionário: na tela inicial podemos alterar os dados dos funcionários. A página vai trazer os dados que foram inseridos anteriormente na tela de cadastro. Os campos aqui também são validados com o plugin jQuery Mask. Também é exibido uma flash message caso a alteração ocorra com sucesso.
+Botão para alterar dados de funcionário:
+  Na tela inicial podemos alterar os dados dos funcionários. A página vai trazer os dados que foram inseridos anteriormente na tela de cadastro. Os campos aqui também são validados com o plugin jQuery Mask. Também é exibido uma flash message caso a alteração ocorra com sucesso.
 
-Botão para deletar funcionário: ao clicar em deletar funcionário, ele será deletado na tabela do banco e consequentemente da página Home. Também é exibido uma flash message.
+Botão para deletar funcionário:
+  Ao clicar em deletar funcionário, ele será deletado na tabela do banco e consequentemente da página Home. Também é exibido uma flash message.
 
 ## Como instalar
 
