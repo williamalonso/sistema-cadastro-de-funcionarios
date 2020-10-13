@@ -52,6 +52,7 @@ Abra seu MySQLWorkbench e importe o arquivo de dump chamado "dump-cadastro-funci
 > public/dump
 
 Nesse arquivo temos 3 funcionários cadastrados. O login do banco é "root" e a senha é vazia.
+Se você renomeou o ".env.example" para ".env", digite neste ".env" o seguinte: "DB_DATABASE=cadastro_funcionarios", "DB_USERNAME=root", "DB_PASSWORD="
 
 Depois de configurar o Virtual host e de importar o banco, acesse "http://sistema-cadastro-funcionarios" e clique em "public".
 
