@@ -42,6 +42,10 @@ Clone o projeto para sua máquina, na pasta "C:\wamp64\www". Abra o terminal na 
 > composer install
 
 
+Se der um erro na exibição da página, renomeie o arquivo ".env.example" para ".env" e digite o comando (na pasta raíz do projeto):
+> php artisan key:generate
+
+
 Agora, acesse este [tutorial](https://www.visualdicas.com.br/index.php/tools/web-server/4-como-alterar-um-servidor-virtual-wamp-server) para configurar o virtual host do Wamp.
 
 Abra seu MySQLWorkbench e importe o arquivo de dump chamado "dump-cadastro-funcionarios" localizado na pasta
