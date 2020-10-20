@@ -28,7 +28,7 @@ class CadastroController extends Controller
         if($req->hasFile('foto')) {
             $foto = $req->file('foto');
             $num = rand(1111, 9999);
-            $dir = "img/cursos";
+            $dir = "img/funcionarios";
             $ex = $foto->guessClientExtension();
             $nomeFoto = "foto" . $num . "." . $ex;
             $foto->move($dir, $nomeFoto); 
@@ -83,7 +83,7 @@ class CadastroController extends Controller
         if($request->hasFile('foto')) {
             $foto = $request->file('foto');
             $num = rand(1111, 9999);
-            $dir = "img/cursos";
+            $dir = "img/funcionarios";
             $ex = $foto->guessClientExtension();
             $nomeFoto = "foto" . $num . "." . $ex;
             $foto->move($dir, $nomeFoto); 

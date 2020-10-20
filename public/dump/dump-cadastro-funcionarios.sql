@@ -46,7 +46,7 @@ CREATE TABLE `dados_funcionarios` (
 
 LOCK TABLES `dados_funcionarios` WRITE;
 /*!40000 ALTER TABLE `dados_funcionarios` DISABLE KEYS */;
-INSERT INTO `dados_funcionarios` VALUES (1,'William','email@teste.com','Advogado','img/cursos/foto9110.jpeg','26','Masculino',NULL,NULL,NULL,NULL),(2,'João',NULL,'Professor de Matemática','img/cursos/foto6934.jpeg','33','Masculino',NULL,NULL,NULL,NULL),(3,'Rosana',NULL,'Geógrafa',NULL,NULL,'Feminino',NULL,NULL,NULL,NULL);
+INSERT INTO `dados_funcionarios` VALUES (1,'William','email@teste.com','Advogado','img/funcionarios/foto9110.jpeg','26','Masculino',NULL,NULL,NULL,NULL),(2,'João',NULL,'Professor de Matemática','img/funcionarios/foto6934.jpeg','33','Masculino',NULL,NULL,NULL,NULL),(3,'Rosana',NULL,'Geógrafa',NULL,NULL,'Feminino',NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `dados_funcionarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,4 +88,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-13  5:05:51
+-- Dump completed on 2020-10-19 21:59:30
