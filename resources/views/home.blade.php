@@ -54,7 +54,7 @@
                             <td style="display: none">{{$key->email}}</td>
                             <td>{{$key->profissao}}</td>
                             <?php if(isset($key->foto)){ ?>
-                                <td><img src="{{asset($key->foto)}}" width="80px;" height="50px;"></td>
+                                <td><img src="{{$key->foto}}" class="foto"></td>
                             <?php } else { ?>
                                 <td>Não há foto deste funcionário</td>
                             <?php } ?>

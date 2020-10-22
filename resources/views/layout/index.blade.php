@@ -15,4 +15,13 @@
         margin: 10px;
         font-size: 18px;
     }
+    .foto {
+        width: 80px;
+        height: 56px;
+        object-fit: cover;
+        transition: all .4s ease-in;
+    }
+    .foto:hover {
+        transform: scale(1.5);
+    }
 </style>
