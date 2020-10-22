@@ -15,7 +15,7 @@ Trata-se de um sistema desenvolvido em Laravel 5.5 para fins didáticos onde o u
 ## Funcionalidades
 
 Tela de Home:
-  Na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema.
+  Na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema. Ao passar o mouse pela foto do funcionário, sua escala é levementa aumentada.
 
 Tela de Cadastro:
   Na tela de cadastro de funcionários temos um formulário e os campos são validados com o plugin jQuery Mask. Após o cadastro, o usuário é redirecionado para a home e uma flash message é exibida durante 3 segundos.
