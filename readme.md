@@ -1,3 +1,5 @@
+![](public/img/home.png)
+
 ## Introdução
 
 Este readme está dividido em:
