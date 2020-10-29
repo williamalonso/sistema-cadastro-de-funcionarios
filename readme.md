@@ -1,3 +1,10 @@
+## Imagem do Projeto
+
+Para mais imagens, acesse a pasta
+> public/img
+
+Página home:
+
 ![](public/img/home.png)
 
 ## Introdução
@@ -8,7 +15,6 @@ Este readme está dividido em:
 - Descrição
 - Funcionalidades
 - Como instalar
-- Imagem
 
 ## Descrição
 
@@ -63,12 +69,3 @@ Se der um erro na exibição da página, renomeie o arquivo ".env.example" para 
 
 
 Se você renomeou o ".env.example" para ".env", digite neste ".env" o seguinte: "DB_DATABASE=cadastro_funcionarios", "DB_USERNAME=root", "DB_PASSWORD="
-
-## Imagem do Projeto
-
-Para mais imagens, acesse a pasta
-> public/img
-
-Página home:
-
-![](public/img/home.png)
