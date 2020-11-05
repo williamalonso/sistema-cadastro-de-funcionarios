@@ -102,7 +102,8 @@ class CadastroController extends Controller
     }
 
     public function excluir($id){
-        if(Funcionario::find($id)->delete()){
+        
+        if( Funcionario::find($id)->delete() && Telefone::find($id)->delete() ){
             Session::flash('message', 'O funcionário foi deletado com sucesso!');
             Session::flash('alert-class', 'alert-success');
           }

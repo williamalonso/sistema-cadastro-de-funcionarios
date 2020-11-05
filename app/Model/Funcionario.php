@@ -10,7 +10,7 @@ class Funcionario extends Model
     protected $primaryKey = 'id';
     protected $table = "dados_funcionarios";
     protected $fillable = [
-        'nome', 'email', 'profissao', 'foto', 'idade', 'sexo', 'celular', 'telefone', 'cpf', 'cidade', 'endereco', 'cep',
+        'nome', 'email', 'profissao', 'foto', 'idade', 'sexo', 'celular1', 'celular2', 'telefone1', 'telefone2', 'cpf', 'cidade', 'endereco', 'cep',
     ];
 
     public static function lista() { //faz o join entre as duas tabelas e lista os dados na home
@@ -29,7 +29,8 @@ class Funcionario extends Model
     }
 
     public static function cadastra() {
-        $conn = DB::connection('mysql')->select("ALTER TABLE dados_funcionarios AUTO_INCREMENT = 0"); //reseta o auto_increment para o "id_funcionario" da tabela "telefone_funcionario" ficar com o valor exato do último id inserido na tabela "dados_funcionarios"
+        $conn = DB::connection('mysql')->select("ALTER TABLE dados_funcionarios AUTO_INCREMENT = 0"); //reseta o auto_increment para o "id" da tabela "telefone_funcionario" ficar com o valor exato do último id inserido na tabela "dados_funcionarios"
+        $conn = DB::connection('mysql')->select("ALTER TABLE telefone_funcionario AUTO_INCREMENT = 0"); //reseta o auto_increment do "id" da tabela "telefone_funcionario" quando eu excluir uma linha
         $conn = DB::connection('mysql')->select("SELECT id from dados_funcionarios order by id desc limit 1"); //envia o valor do último id da tabela "dados_funcionarios"
         return $conn;
     }

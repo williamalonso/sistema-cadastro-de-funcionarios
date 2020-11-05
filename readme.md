@@ -23,20 +23,20 @@ Trata-se de um sistema desenvolvido em Laravel 5.5 para fins didáticos onde o u
 ## Funcionalidades
 
 Tela de Home:
-  Na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema. Ao passar o mouse pela foto do funcionário, sua escala é levementa aumentada.
+  Na tela de home temos uma tabela onde é possível pesquisar por nome, profissão, idade, entre outros dados dos funcionários. Foi utilizado o plugin Datatable do JQuery para a construção dessa tabela. Os funcionários são listados diretamente do banco. Aqui os dados são listados usando uma cláusula Join, pois temos 2 tabelas no sistema (uma com os dados dos funcionários e uma separada com opções de telefone deste usuário). Ao passar o mouse pela foto do funcionário, sua escala é levementa aumentada.
 
 Tela de Cadastro:
   Na tela de cadastro de funcionários temos um formulário e os campos são validados com o plugin jQuery Mask. Após o cadastro, o usuário é redirecionado para a home e uma flash message é exibida durante 3 segundos.
 
 Botão para alterar dados de funcionário:
-  Na tela inicial podemos alterar os dados dos funcionários. A página vai trazer os dados que foram inseridos anteriormente na tela de cadastro. Os campos aqui também são validados com o plugin jQuery Mask. Também é exibido uma flash message caso a alteração ocorra com sucesso.
+  Na tela inicial podemos alterar os dados dos funcionários. A página vai trazer os dados que foram inseridos anteriormente na tela de cadastro. Os campos aqui também são validados com o plugin jQuery Mask. Também é exibido uma flash message caso a alteração ocorra com sucesso ou apresente erro.
 
 Botão para deletar funcionário:
-  Ao clicar em deletar funcionário, ele será deletado na tabela do banco e consequentemente da página Home. Também é exibido uma flash message.
+  Ao clicar em deletar funcionário, ele será deletado na tabela do banco e consequentemente da página Home. Também é exibido uma flash message. Ao deletar um funcionário, o auto incremento no banco é resetado, evitando que o campo 'id' pule do valor 1 para o 3 por exemplo, ao cadastrar novos usuários.
 
 ## Como instalar
 
-Você vai precisar:
+Você vai precisar do:
 - [Wampserver](https://www.wampserver.com/en/)
 - [Composer](https://getcomposer.org/)
 
@@ -64,8 +64,8 @@ Nesse arquivo temos o banco chamado "cadastro_funcionarios" e duas tabelas: "dad
 
 Depois de configurar o Virtual host e de importar o banco, acesse "http://sistema-cadastro-funcionarios" e clique em "public".
 
-Se der um erro na exibição da página, renomeie o arquivo ".env.example" para ".env" e digite o comando (na pasta raíz do projeto):
+Se der um erro na exibição da página, renomeie o arquivo ".env.example" para ".env" (caso não exista, crie-o) e digite o comando (na pasta raíz do projeto):
 > php artisan key:generate
 
 
-Se você renomeou o ".env.example" para ".env", digite neste ".env" o seguinte: "DB_DATABASE=cadastro_funcionarios", "DB_USERNAME=root", "DB_PASSWORD="
+Se você renomeou o ".env.example" para ".env" (ou o criou), digite neste ".env" o seguinte: "DB_DATABASE=cadastro_funcionarios", "DB_USERNAME=root", "DB_PASSWORD=".

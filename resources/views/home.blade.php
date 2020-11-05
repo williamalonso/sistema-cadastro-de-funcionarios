@@ -8,6 +8,8 @@
                 <p class="alert alert-danger text-center mt-2 alerta" role="alert">{{ Session::get('message') }}</p>
             @elseif(Session::get('message') == "Erro ao atualizar funcionário!")
                 <p class="alert alert-danger text-center mt-2 alerta" role="alert">{{ Session::get('message') }}</p>
+            @elseif(Session::get('message') == "Erro ao deletar funcionário!")
+            <p class="alert alert-danger text-center mt-2 alerta" role="alert">{{ Session::get('message') }}</p>
             @else
                 <p class="alert alert-success text-center mt-2 alerta" role="alert">{{ Session::get('message') }}</p>
             @endif
